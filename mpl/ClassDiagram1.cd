@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CalculatorManagerLib::CalculatorEngine">
+    <Position X="28.5" Y="0.5" Width="4.5" />
+    <Members>
+      <Field Name="calculator_history" Hidden="true" />
+      <Method Name="CalculatorEngine" Hidden="true" />
+      <Field Name="carry_bit" Hidden="true" />
+      <Field Name="current_calculator_mode" Hidden="true" />
+      <Field Name="current_max_int_digit" Hidden="true" />
+      <Field Name="current_number_width" Hidden="true" />
+      <Method Name="GetCalculatorMode" Hidden="true" />
+      <Method Name="GetCurrentValueForRadix" Hidden="true" />
+      <Method Name="SetRadixAndNumberWidth" Hidden="true" />
+      <Method Name="ToggleBit" Hidden="true" />
+      <Method Name="UpdateMaxIntegerDigit" Hidden="true" />
+      <Method Name="UpdateNumberString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAhGpAQQFgARGiAADoEkIFoIAQCADhMApAQAGGYAgAA=</HashCode>
+      <FileName>CalculatorManagerLib\CalculatorEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::CalculatorHistory" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAEAAAAAAIAAAAAAgAAAAcAAAAgABAAAI=</HashCode>
+      <FileName>CalculatorManagerLib\CalculatorHistory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::InputString" Collapsed="true">
+    <Position X="18" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAACCAAAAAAABAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\CalculatorInput.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::CalculatorInput">
+    <Position X="21" Y="7.75" Width="3.5" />
+    <Members>
+      <Field Name="calculator_mode" Hidden="true" />
+      <Method Name="CalculatorInput" Hidden="true" />
+      <Field Name="decimal_point" Hidden="true" />
+      <Method Name="IsBinaryBaseNegative" Hidden="true" />
+      <Method Name="SetCalculatorMode" Hidden="true" />
+      <Method Name="SetDecimalSymbol" Hidden="true" />
+      <Method Name="SetNumberWidth" Hidden="true" />
+      <Field Name="word_bit_width" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EABAIAAAAAAAAAAGAAIIIAAECQQQgAAAACAQAALCRiA=</HashCode>
+      <FileName>CalculatorManagerLib\CalculatorInput.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::CalculatorManager">
+    <Position X="34" Y="1" Width="4" />
+    <Members>
+      <Method Name="~CalculatorManager" Hidden="true" />
+      <Field Name="calculator_engines" Hidden="true" />
+      <Field Name="calculator_historys" Hidden="true" />
+      <Method Name="CalculatorManager" Hidden="true" />
+      <Method Name="ClearCurrentHistory" Hidden="true" />
+      <Method Name="GetCurrentCalcualtorEngineDecimalSeparator" Hidden="true" />
+      <Method Name="GetCurrentCalculatorEngineCalcualteResultForRadix" Hidden="true" />
+      <Method Name="GetCurrentHistoryItem" Hidden="true" />
+      <Method Name="GetCurrentHistoryItems" Hidden="true" />
+      <Method Name="GetCurrentHistoryMaxSize" Hidden="true" />
+      <Field Name="ishistory_item_load_mode" Hidden="true" />
+      <Method Name="MemorizedNumberClearAll" Hidden="true" />
+      <Method Name="RemoveCurrentHistoryItem" Hidden="true" />
+      <Method Name="SetCurrentCalculatorEngineMode" Hidden="true" />
+      <Method Name="SetCurrentCalculatorEngineNumberWidth" Hidden="true" />
+      <Method Name="SetCurrentCalculatorEngineRadix" Hidden="true" />
+      <Method Name="SetIsInHistoryItemLoadModeFlag" Hidden="true" />
+      <Field Name="shift_type" Hidden="true" />
+      <Method Name="UpdateCurrentCalculatorEngineMaxIntegerDigit" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IIAAgAQQIQCYBJBCAIGAAIAoAAQCADJEJIAEBAZAQAA=</HashCode>
+      <FileName>CalculatorManagerLib\CalculatorManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::CalculatorMemory" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAYAAEAAgAAGAAAAIAAwBAAABAARAAAJAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\CalculatorMemory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::ExpressionCollector">
+    <Position X="20" Y="0.5" Width="5" />
+    <Members>
+      <Method Name="~ExpressionCollector" Hidden="true" />
+      <Field Name="calculator_history" Hidden="true" />
+      <Field Name="calculator_mode" Hidden="true" />
+      <Method Name="CompleteHistoryLine" Hidden="true" />
+      <Method Name="ExpressionCollector" Hidden="true" />
+      <Method Name="InsertBracketsAroundLastOperand" Hidden="true" />
+      <Method Name="InsertPrecedenceEncloseBrackets" Hidden="true" />
+      <Method Name="SetCalculatorMode" Hidden="true" />
+      <Method Name="SetDecimalSymbol" Hidden="true" />
+      <Method Name="UpdateCollectedExpression" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQFAARCQAAMACgAIEAAIFAAAACAEkAUQoIUIEADiAgA=</HashCode>
+      <FileName>CalculatorManagerLib\ExpressionCollector.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::ParenthesisCommand" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIACAAAAAAAAAAQAAAAAAAQAAAAAAAAAAAAAAABACAQ=</HashCode>
+      <FileName>CalculatorManagerLib\ExpressionCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::UnaryCommand" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAQAAAAAAAQAAAAAAAAAAAAAAABACIA=</HashCode>
+      <FileName>CalculatorManagerLib\ExpressionCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::BinaryCommand" Collapsed="true">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAABAAAAAAAAQAAAAAAAQAAAAAAAAAAAAAAABACAA=</HashCode>
+      <FileName>CalculatorManagerLib\ExpressionCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::OperandCommand" Collapsed="true">
+    <Position X="0.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIABAQgACAAAATAAEAQAJAAQABAAACCAgAAEgQACCAA=</HashCode>
+      <FileName>CalculatorManagerLib\ExpressionCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::ISerializeCommandVisitor" Collapsed="true">
+    <Position X="8.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\ExpressionCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::ICalculatorDisplay" Collapsed="true">
+    <Position X="5.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAACAAAAAAEAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\ICalculatorDisplay.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::ICalculatorHistory" Collapsed="true">
+    <Position X="1.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgABAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\ICalculatorHistory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::IExpressionCommand" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>CalculatorManagerLib\IExpressionCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::IOperatorCommand" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\IExpressionCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::IParenthesisCommand" Collapsed="true">
+    <Position X="3" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\IExpressionCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::IUnaryCommand" Collapsed="true">
+    <Position X="5.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\IExpressionCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::IBinaryCommand" Collapsed="true">
+    <Position X="7.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\IExpressionCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::IOperandCommand" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAQAACAAAABAAEAQAAAAQAAAAAAAAgAAAAQAAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\IExpressionCommand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::IResourceProvider" Collapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>CalculatorManagerLib\IResourceProvider.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::NumberFormat" Collapsed="true">
+    <Position X="18" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAADABAAAAAAAAAAAKgAAAiAIA=</HashCode>
+      <FileName>CalculatorManagerLib\NumberFormat.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::NumberWidth" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAQAAAAAAARAMAAQAABwAgAAAAACAAAAEgAIEAAQA=</HashCode>
+      <FileName>CalculatorManagerLib\NumberWidth.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::Radix" Collapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAQIBAAgAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\Radix.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::Resource" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAQAAACBAAABAAAAABACAAAAAAAAAAAAAAABIAQI=</HashCode>
+      <FileName>CalculatorManagerLib\Resource.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::CalcualtorEngineTester" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABQAAIAICIAAAAACBAAAAEAAgAAACAAACECABAA=</HashCode>
+      <FileName>CalculatorTester\CalculatorEngineTester.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::CalculatorInputTester" Collapsed="true">
+    <Position X="13.5" Y="9.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAgAAEEIAAABAgBAAACAAAAAA=</HashCode>
+      <FileName>CalculatorTester\CalculatorInputTester.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::ExpressionCollectorTester" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAgAAIAAAAAAAAAAAEAAgAAACAAACAAABAA=</HashCode>
+      <FileName>CalculatorTester\ExpressionCollectorTester.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::GroupDigitsUtilsTester" Collapsed="true">
+    <Position X="16.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>CalculatorTester\GroupDigitsUtilsTester.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::ResourceProviderImpl" Collapsed="true">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CalculatorTester\InterfaceImpl.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::CalculatorHistoryImpl" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgABAAAA=</HashCode>
+      <FileName>CalculatorTester\InterfaceImpl.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::SerializeCommandVisitorImpl" Collapsed="true">
+    <Position X="8.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CalculatorTester\InterfaceImpl.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorManagerLib::CalculatorDisplayImpl" Collapsed="true">
+    <Position X="5.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEACAAAAAACAAAAAAEAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CalculatorTester\InterfaceImpl.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mpl::mpf" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGBBNSEBRGOMEGSEAi+pJ8gVAQhdCAxqC1OmAkDiIow=</HashCode>
+      <FileName>mpl\mpf\mpf.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mpl::mpf_radix" Collapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAgAJBAAAAQAAAAAYAAgEAAAAAAAACgGgAAgAAgA=</HashCode>
+      <FileName>mpl\mpf_radix\mpf_radix.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mpl::mpi" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgUABoEJpiAIAQSAHBIYBsgBTAgFKAAYWSfnQgCKAJg=</HashCode>
+      <FileName>mpl\mpi\mpi.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mpl::mpi_test" Collapsed="true">
+    <Position X="16.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BKEAAIAAAMAAIAABAAAAAAQAAAQAAAAAAIAAAAAhQAA=</HashCode>
+      <FileName>mpl\mpi_test\mpi_test.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="CalculatorManagerLib::LastUpdateNumberStringInformation" Collapsed="true">
+    <Position X="16.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABACAECAAAAAAUAAAAACAAAAAQAAAAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\CalculatorEngineDisplay.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="CalculatorManagerLib::OperandInfo" Collapsed="true">
+    <Position X="18" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAAAEAAAAAAAAAAAAAAAAAAAAAAACAAAIEAAAAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\ExpressionCollector.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="CalculatorManagerLib::HistoryItem" Collapsed="true">
+    <Position X="14.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAIAAAAABAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\ICalculatorHistory.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="mpl::double_complex" Collapsed="true">
+    <Position X="12.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>mpl\mpf_radix\mpf_radix.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="mpl::tune::tune_args" Collapsed="true">
+    <Position X="11" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAhAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAACAAAiA=</HashCode>
+      <FileName>mpl\mpi\tune.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="mpl::tune::cutoffs" Collapsed="true">
+    <Position X="11" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAIBAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>mpl\mpi\tune.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="mpl::mpl_err" Collapsed="true">
+    <Position X="11" Y="9.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mpl\mpl_err.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="CalculatorManagerLib::AngleType" Collapsed="true">
+    <Position X="12.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAQAABAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\AngleType.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CalculatorManagerLib::CalculatorMode" Collapsed="true">
+    <Position X="14.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAIAAAQAAAAIAAAAAAIA=</HashCode>
+      <FileName>CalculatorManagerLib\CalculatorMode.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CalculatorManagerLib::CommandType" Collapsed="true">
+    <Position X="16.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEBBAAAAAAAAAAACAAAAAAAAAUAAAAAIAAAEAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\Command.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CalculatorManagerLib::ShiftType" Collapsed="true">
+    <Position X="18" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAACAAAAAAAEAAAAAAAACIAAAAAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\Command.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CalculatorManagerLib::TrigonometricFunction" Collapsed="true">
+    <Position X="11" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIgAAAAAAAAAgAAAAAAAACABIAAAQAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\Command.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CalculatorManagerLib::NumberFormatType" Collapsed="true">
+    <Position X="11" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAIAAAAgAIA=</HashCode>
+      <FileName>CalculatorManagerLib\NumberFormat.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CalculatorManagerLib::NumberWidthType" Collapsed="true">
+    <Position X="12.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABEAAAAAAAAAAAAAAAAAAAAABIAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\NumberWidth.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CalculatorManagerLib::RadixType" Collapsed="true">
+    <Position X="16.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAgAAAACAAAAAAgAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>CalculatorManagerLib\Radix.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="mpl::ang" Collapsed="true">
+    <Position X="11" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAIAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mpl\mpf\mpf.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="mpl::num_format" Collapsed="true">
+    <Position X="18" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>mpl\mpf_radix\mpf_radix.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="mpl::ord" Collapsed="true">
+    <Position X="14.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAABAIAAAAAAAA=</HashCode>
+      <FileName>mpl\mpi\mpi.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

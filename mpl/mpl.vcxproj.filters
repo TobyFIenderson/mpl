@@ -1,0 +1,792 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_ctor_dtor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_grow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_create_size.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_abs_cmp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_abs_add.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_clamp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_abs_sub.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_baseline_mul.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_comba_mul.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_add.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_sub.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_cmp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_operator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_set_d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_karatsuba_mul.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_lsh_x.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_rsh_x.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_lsh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_rsh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_toom_cook_mul.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_div_3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_mul.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_div.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_cnt_bits.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_mul_d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_add_d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_sub_d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_div_d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_srand_rand.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_output_constant.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi_test\mpi_test_add.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi_test\mpi_test_generate_mpi_to_file.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi_test\mpi_test_output_mpi_to_file.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi_test\mpi_test_memory_operation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi_test\mpi_test_get_contents_from_file.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi_test\mpi_test_print_file.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi_test\mpi_test_sub.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi_test\mpi_test_mul.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi_test\mpi_test_div.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_str_to_mpi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_to_str.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi_test\mpi_test_to_str.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi_test\mpi_test_output_str_to_file.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_get_radix_ratio.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi_test\mpi_test_str_to_mpi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_baseline_sqr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_comba_sqr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_karatsuba_sqr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_toom_cook_sqr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_sqr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_expt_u32.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_k_ray_expt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_pow_u32.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi_test\mpi_test_discrete.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_root_u32.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_set_2expt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_sqrt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi_test\mpi_test_root.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_and_tc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_or_tc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_xor_tc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_not_tc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_shrink.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_gcd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_cnt_lsb.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi_test\mpi_test_gcd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_lcm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_two_complement.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_fact.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_get_mag_32.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_get_mag_64.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_signed_rsh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_operator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_str_to_mpf.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_add.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_div.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_to_str.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_expt_u32.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_k_ray_expt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_to_radix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_to_radix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_add_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_trimit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_to_sci_str.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_mul_2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_mul.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_pow_u32.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_clamp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_set_d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_abs_add.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_print.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_to_radix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_to_flo_str.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_to_str.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_output_constant.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_double_to_mpf.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_to_mpi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_trimit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_cnt_tail_zero.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_clamp_tail.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_ctor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_swap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_print.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_is_abs_one.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_is_neg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_zero.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_is_neg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_is_zero.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_is_abs_one.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_swap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_sub.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_mul.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_sqr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_pow_mpi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_set_d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_rdig.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_abs_cmp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_cmp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_mod.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_mod.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_sqrt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_is_small_enough.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_incr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_decr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_operator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_ctor_dtor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_integer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_fraction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_e_expt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_inv.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_pow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_ln.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_mul_2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_div_2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_mul_2d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_div_2d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_to_i32.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_to_i64.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_to_u32.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_to_u64.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_pow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_cube.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_cubet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_div_3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi\mpi_cubet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_root.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_const_pi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_mul_d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_const_e.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_const_ln2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_ln10.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_div_d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_set_2expt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_mod_2pi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_scale_ang.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_const_2pi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_const_half_pi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_const_rtod_ratio.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_const_dtor_ratio.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_sin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_cos.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_tan.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_mod_pi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_const_smallest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_cot.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_sec.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_csc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_is_ignorable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_const_sqrt2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_asin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_acos.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_atan.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_acot.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_asec.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_acsc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_sinh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_cosh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_tanh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_coth.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_sech.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_csch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_asinh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_acosh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_atanh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_acoth.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_asech.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_acsch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_neg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_abs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_ceil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_floor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorManagerLib\Radix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorManagerLib\NumberWidth.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorManagerLib\Command.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorManagerLib\ExpressionCommand.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorManagerLib\ExpressionCollector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorManagerLib\Resource.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorManagerLib\GroupDigitsUtils.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorManagerLib\CalculatorInput.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_fact.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorManagerLib\NumberFormat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorManagerLib\CalculatorEngine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorManagerLib\CalculatorEngineGetterSetter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorManagerLib\CalculatorEngineDisplay.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorManagerLib\CalculatorEngineProcessCommand.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorManagerLib\MpfMath.h">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorManagerLib\CalculatorEngineDoOperation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorManagerLib\MpfMath.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorManagerLib\CalculatorHistory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorManagerLib\CalculatorMemory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculatorManagerLib\CalculatorManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_abs_add.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_abs_sub.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi_test\mpi_test_add_time.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi_test\mpi_test_sub_time.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi_test\mpi_test_mul_time.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpi_test\mpi_test_div_time.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl\mpf\mpf_gamma_taylor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mpl\mpl_err.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mpl\mpl_ns.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mpl\mpi\mpi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mpl\mpi_test\mpi_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mpl\mpi\tune.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mpl\mpf\mpf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mpl\mpf_radix\mpf_radix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\Command.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\CalculatorManagerLibNS.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\AngleType.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\NumberFormat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\Radix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\CalculatorMode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\NumberWidth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\IExpressionCommand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\ICalculatorDisplay.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\ICalculatorHistory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\IResourceProvider.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\CalculatorError.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\ResourceStringID.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\CalculatorEngine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\ExpressionCollector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\ExpressionCommand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\GroupDigitsUtils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\CalculatorInput.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\CalculatorHistory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\CalculatorMemory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorManagerLib\CalculatorManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorTester\InterfaceImpl.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorTester\CalculatorInputTester.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorTester\GroupDigitsUtilsTester.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorTester\ExpressionCollectorTester.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculatorTester\CalculatorEngineTester.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+    <None Include="mpl\mpi_test\sub_test.py" />
+    <None Include="mpl\mpi_test\add_test.py" />
+    <None Include="mpl\mpi_test\mul_test.py" />
+    <None Include="mpl\mpi_test\to_str_test.py" />
+    <None Include="mpl\mpi_test\gcd_test.py" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="mpl\ignored_warnings.txt" />
+  </ItemGroup>
+</Project>

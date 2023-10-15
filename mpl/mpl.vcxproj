@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0adfd053-6004-41c4-91b5-e051db56bfaf}</ProjectGuid>
+    <RootNamespace>mpl</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CalculatorManagerLib\CalculatorEngine.cpp" />
+    <ClCompile Include="CalculatorManagerLib\CalculatorEngineDisplay.cpp" />
+    <ClCompile Include="CalculatorManagerLib\CalculatorEngineDoOperation.cpp" />
+    <ClCompile Include="CalculatorManagerLib\CalculatorEngineGetterSetter.cpp" />
+    <ClCompile Include="CalculatorManagerLib\CalculatorEngineProcessCommand.cpp" />
+    <ClCompile Include="CalculatorManagerLib\CalculatorHistory.cpp" />
+    <ClCompile Include="CalculatorManagerLib\CalculatorInput.cpp" />
+    <ClCompile Include="CalculatorManagerLib\CalculatorManager.cpp" />
+    <ClCompile Include="CalculatorManagerLib\CalculatorMemory.cpp" />
+    <ClCompile Include="CalculatorManagerLib\Command.cpp" />
+    <ClCompile Include="CalculatorManagerLib\ExpressionCollector.cpp" />
+    <ClCompile Include="CalculatorManagerLib\ExpressionCommand.cpp" />
+    <ClCompile Include="CalculatorManagerLib\GroupDigitsUtils.cpp" />
+    <ClCompile Include="CalculatorManagerLib\MpfMath.cpp" />
+    <ClCompile Include="CalculatorManagerLib\MpfMath.h" />
+    <ClCompile Include="CalculatorManagerLib\NumberFormat.cpp" />
+    <ClCompile Include="CalculatorManagerLib\NumberWidth.cpp" />
+    <ClCompile Include="CalculatorManagerLib\Radix.cpp" />
+    <ClCompile Include="CalculatorManagerLib\Resource.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_abs.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_abs_add.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_abs_cmp.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_abs_sub.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_acos.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_acosh.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_acot.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_acoth.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_acsc.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_acsch.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_add.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_asec.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_asech.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_asin.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_asinh.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_atan.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_atanh.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_ceil.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_clamp_tail.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_cmp.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_cnt_tail_zero.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_const_2pi.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_const_dtor_ratio.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_const_e.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_const_half_pi.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_const_ln2.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_const_pi.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_const_rtod_ratio.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_const_smallest.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_const_sqrt2.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_cos.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_cosh.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_cot.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_coth.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_csc.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_csch.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_ctor.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_cube.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_cubet.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_div.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_div_2.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_div_2d.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_div_3.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_div_d.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_e_expt.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_expt_u32.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_fact.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_floor.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_fraction.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_gamma_taylor.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_integer.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_inv.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_is_abs_one.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_is_ignorable.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_is_neg.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_is_small_enough.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_is_zero.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_k_ray_expt.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_ln.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_ln10.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_mod.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_mod_pi.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_mul.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_mul_2.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_mul_2d.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_mul_d.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_neg.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_operator.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_output_constant.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_pow.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_pow_mpi.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_rdig.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_root.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_mod_2pi.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_scale_ang.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_sec.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_sech.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_set_2expt.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_set_d.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_sin.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_sinh.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_sqr.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_sqrt.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_sub.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_swap.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_tan.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_tanh.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_to_mpi.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_trimit.cpp" />
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_abs_add.cpp" />
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_add_1.cpp" />
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_clamp.cpp" />
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_ctor_dtor.cpp" />
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_operator.cpp" />
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_to_flo_str.cpp" />
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_to_radix.cpp" />
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_mul.cpp" />
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_mul_2.cpp" />
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_pow_u32.cpp" />
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_print.cpp" />
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_set_d.cpp" />
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_to_str.cpp" />
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_trimit.cpp" />
+    <ClCompile Include="mpl\mpf_radix\mpf_radix_to_sci_str.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_str_to_mpf.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_to_radix.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_to_str.cpp" />
+    <ClCompile Include="mpl\mpf\mpf_double_to_mpf.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_cubet.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_decr.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_abs_add.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_abs_cmp.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_abs_sub.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_add.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_add_d.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_and_tc.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_baseline_mul.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_baseline_sqr.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_clamp.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_cmp.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_cnt_bits.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_cnt_lsb.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_comba_mul.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_comba_sqr.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_create_size.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_ctor_dtor.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_div.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_div_3.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_div_d.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_expt_u32.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_fact.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_gcd.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_get_mag_32.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_get_mag_64.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_get_radix_ratio.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_grow.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_incr.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_is_abs_one.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_is_neg.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_karatsuba_mul.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_karatsuba_sqr.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_k_ray_expt.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_lcm.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_lsh_x.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_mod.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_mul.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_mul_d.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_not_tc.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_operator.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_or_tc.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_output_constant.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_pow.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_pow_u32.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_print.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_root_u32.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_rsh.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_rsh_x.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_set_2expt.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_set_d.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_shrink.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_signed_rsh.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_sqr.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_sqrt.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_srand_rand.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_str_to_mpi.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_sub.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_lsh.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_sub_d.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_swap.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_toom_cook_mul.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_toom_cook_sqr.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_to_i32.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_to_i64.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_to_radix.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_to_str.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_to_u32.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_to_u64.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_two_complement.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_xor_tc.cpp" />
+    <ClCompile Include="mpl\mpi\mpi_zero.cpp" />
+    <ClCompile Include="mpl\mpi_test\mpi_test_add.cpp" />
+    <ClCompile Include="mpl\mpi_test\mpi_test_add_time.cpp" />
+    <ClCompile Include="mpl\mpi_test\mpi_test_discrete.cpp" />
+    <ClCompile Include="mpl\mpi_test\mpi_test_div.cpp" />
+    <ClCompile Include="mpl\mpi_test\mpi_test_div_time.cpp" />
+    <ClCompile Include="mpl\mpi_test\mpi_test_gcd.cpp" />
+    <ClCompile Include="mpl\mpi_test\mpi_test_generate_mpi_to_file.cpp" />
+    <ClCompile Include="mpl\mpi_test\mpi_test_get_contents_from_file.cpp" />
+    <ClCompile Include="mpl\mpi_test\mpi_test_memory_operation.cpp" />
+    <ClCompile Include="mpl\mpi_test\mpi_test_mul.cpp" />
+    <ClCompile Include="mpl\mpi_test\mpi_test_mul_time.cpp" />
+    <ClCompile Include="mpl\mpi_test\mpi_test_output_mpi_to_file.cpp" />
+    <ClCompile Include="mpl\mpi_test\mpi_test_output_str_to_file.cpp" />
+    <ClCompile Include="mpl\mpi_test\mpi_test_print_file.cpp" />
+    <ClCompile Include="mpl\mpi_test\mpi_test_root.cpp" />
+    <ClCompile Include="mpl\mpi_test\mpi_test_str_to_mpi.cpp" />
+    <ClCompile Include="mpl\mpi_test\mpi_test_sub.cpp" />
+    <ClCompile Include="mpl\mpi_test\mpi_test_sub_time.cpp" />
+    <ClCompile Include="mpl\mpi_test\mpi_test_to_str.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CalculatorManagerLib\AngleType.h" />
+    <ClInclude Include="CalculatorManagerLib\CalculatorEngine.h" />
+    <ClInclude Include="CalculatorManagerLib\CalculatorError.h" />
+    <ClInclude Include="CalculatorManagerLib\CalculatorHistory.h" />
+    <ClInclude Include="CalculatorManagerLib\CalculatorInput.h" />
+    <ClInclude Include="CalculatorManagerLib\CalculatorManager.h" />
+    <ClInclude Include="CalculatorManagerLib\CalculatorMemory.h" />
+    <ClInclude Include="CalculatorManagerLib\CalculatorMode.h" />
+    <ClInclude Include="CalculatorManagerLib\Command.h" />
+    <ClInclude Include="CalculatorManagerLib\CalculatorManagerLibNS.h" />
+    <ClInclude Include="CalculatorManagerLib\ExpressionCollector.h" />
+    <ClInclude Include="CalculatorManagerLib\ExpressionCommand.h" />
+    <ClInclude Include="CalculatorManagerLib\GroupDigitsUtils.h" />
+    <ClInclude Include="CalculatorManagerLib\ICalculatorDisplay.h" />
+    <ClInclude Include="CalculatorManagerLib\ICalculatorHistory.h" />
+    <ClInclude Include="CalculatorManagerLib\IExpressionCommand.h" />
+    <ClInclude Include="CalculatorManagerLib\IResourceProvider.h" />
+    <ClInclude Include="CalculatorManagerLib\NumberFormat.h" />
+    <ClInclude Include="CalculatorManagerLib\NumberWidth.h" />
+    <ClInclude Include="CalculatorManagerLib\Radix.h" />
+    <ClInclude Include="CalculatorManagerLib\ResourceStringID.h" />
+    <ClInclude Include="CalculatorManagerLib\Resource.h" />
+    <ClInclude Include="CalculatorTester\CalculatorEngineTester.hpp" />
+    <ClInclude Include="CalculatorTester\CalculatorInputTester.hpp" />
+    <ClInclude Include="CalculatorTester\ExpressionCollectorTester.hpp" />
+    <ClInclude Include="CalculatorTester\GroupDigitsUtilsTester.hpp" />
+    <ClInclude Include="CalculatorTester\InterfaceImpl.hpp" />
+    <ClInclude Include="mpl\mpf\mpf.h" />
+    <ClInclude Include="mpl\mpf_radix\mpf_radix.h" />
+    <ClInclude Include="mpl\mpi\mpi.h" />
+    <ClInclude Include="mpl\mpi\tune.hpp" />
+    <ClInclude Include="mpl\mpi_test\mpi_test.h" />
+    <ClInclude Include="mpl\mpl_err.h" />
+    <ClInclude Include="mpl\mpl_ns.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="cpp.hint" />
+    <None Include="mpl\mpi_test\add_test.py" />
+    <None Include="mpl\mpi_test\gcd_test.py" />
+    <None Include="mpl\mpi_test\mul_test.py" />
+    <None Include="mpl\mpi_test\sub_test.py" />
+    <None Include="mpl\mpi_test\to_str_test.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="mpl\ignored_warnings.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
